@@ -1,0 +1,10 @@
+imd_module_body:
+  path: '/imd-module'
+  defaults:
+    _controller: '\Drupal\imd_module\Controller\ImdModuleController::body'
+    _title: 'IMD Custom table for movies'
+    _form: '\Drupal\imd_module\Form\ImdModuleForm'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

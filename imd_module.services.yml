@@ -1,0 +1,4 @@
+services:
+  imd_module.default:
+    class: Drupal\imd_module\ImdService
+    arguments: [ ]

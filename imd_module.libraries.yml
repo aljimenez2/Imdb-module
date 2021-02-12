@@ -1,0 +1,5 @@
+imd-module:
+  version: 1.x
+  css:
+    theme:
+      css/imd-module.css: {weight:1}

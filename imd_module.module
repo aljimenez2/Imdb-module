@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Module file for imd_module_redirect.
+ */
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * Helper function to redirect after installation.
+ */
+function imd_module_redirect() { 
+    $url = \Drupal\Core\Url::fromRoute('imd_module_body')->setAbsolute()->toString();
+    $response = new RedirectResponse($url);
+    $response->send();
+    return;
+}
+
+/**
+ * Adding our custom css file it is a bootstrap.css with the name change for the example.
+ */
+function imd_module_element_info_alter(array &$types) {
+  if (isset($types['table'])) {
+    $types['table']['#attached']['library'][] = 'imd_module/imd-module';
+  }
+}

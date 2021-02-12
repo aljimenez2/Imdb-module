@@ -1,0 +1,6 @@
+name: Imds Custom Module
+type: module
+description: 'IMGS custom module to build a table with the info for movies.'
+package: Custom module
+core: 8.x
+
